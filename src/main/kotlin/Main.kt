@@ -1,8 +1,7 @@
 import java.math.BigInteger
 import java.security.SecureRandom
 
-private fun cipher() {
-    val msg = "Get this piece of code, bro!"
+private fun criptografiaRSA(msg: String) {
     val msgCifrada: String?
     val msgDecifrada: String?
     val n: BigInteger
@@ -47,5 +46,5 @@ private fun cipher() {
 }
 
 fun main(args: Array<String>) {
-    cipher()
+    criptografiaRSA("Teste de criptografia RSA")
 }
